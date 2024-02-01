@@ -9,7 +9,7 @@ public class MainController {
 
 	@GetMapping("/")
 	public ModelAndView main() {
-		ModelAndView mv = new ModelAndView("mypage");
+		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("prt","member");
 		
 		return mv;
