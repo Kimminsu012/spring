@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +12,11 @@
 <title> 메이븐 테스트 </title>
 </head>
 <body>
-
-	<a href="/signup" id="up">회원가입</a>
-	<a href="/signin" id="in">로그인</a>
+	<h1>${user }</h1>
+	
+		<a href="/signup" id="up">회원가입</a>
+		<a href="/signin" id="in">로그인</a>
+		<a href="/update" id="new">회원정보 수정</a>
 
 </body>
 </html>
@@ -19,6 +26,7 @@
 	}
 	#up{ background-color:#3498db; }
 	#in{ background-color:#27ae60; }
+	#new{ background-color:#187a2c; }
 </style>
 
 
