@@ -28,7 +28,7 @@ public class MemberService {
 		
 	}
 	public void update(Map<String, String> pm) {
-		memberdao.update(pm.get("email"),  pm.get("pw"),pm.get("name") , pm.get("tel"), pm.get("newPin"));
+		memberdao.update(pm.get("email"),  pm.get("pin"),pm.get("name") , pm.get("tel"), pm.get("newPin"));
 	}
 	
 	
