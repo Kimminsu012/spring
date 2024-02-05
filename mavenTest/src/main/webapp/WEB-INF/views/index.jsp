@@ -15,8 +15,12 @@
 	<h1>${user }</h1>
 	
 		<a href="/signup" id="up">회원가입</a>
+		<c:if test="${user == null }">
 		<a href="/signin" id="in">로그인</a>
+		</c:if>
+		<c:if test="${user != null }">
 		<a href="/update" id="new">회원정보 수정</a>
+		</c:if>
 
 </body>
 </html>

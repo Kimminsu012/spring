@@ -27,8 +27,8 @@ public class MemberService {
 		return memberdao.findMemberByemailpw(param.get("email"), param.get("pin"));
 		
 	}
-	public String update(Map<String, String> pm) {
-		
+	public void update(Map<String, String> pm) {
+		memberdao.update(pm.get("email"),  pm.get("pw"),pm.get("name") , pm.get("tel"), pm.get("newPin"));
 	}
 	
 	

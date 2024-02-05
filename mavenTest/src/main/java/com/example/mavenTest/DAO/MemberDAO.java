@@ -33,7 +33,7 @@ public class MemberDAO {
 	}
 	
 	public void update(String email, String pw, String name, String tel, String newPin) {
-		String sql = "update member set  pw=?, name=?, tel=? where email=? and pw=?";
+		String sql = "update member set name=?, tel=?, pw=? where email=? and pw=?";
 		jdbcTemplate.update(sql, name,tel,newPin,email,pw );
 	}
 }
