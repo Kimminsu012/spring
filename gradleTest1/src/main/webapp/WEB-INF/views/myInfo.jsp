@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>input3.jsp</h2>
-	
-	${person.myId } <br> ${person.myName }
+
+	<h3>내정보</h3>
+	<p>이름 : ${myInfoDTO.name }</p> 
+	<p>나이 : ${age }</p> 
+	<p>직업 : ${myInfoDTO.job }</p>
+
 </body>
 </html>

@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>input3.jsp</h2>
+	<h2>input4.jsp</h2>
+	${id } <br> ${name }
 	
-	${person.myId } <br> ${person.myName }
 </body>
 </html>
