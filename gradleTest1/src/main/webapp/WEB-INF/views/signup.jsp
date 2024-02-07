@@ -30,7 +30,7 @@
 				   <form:errors path="name" cssClass="error"/>
 		</p>
 		<p>
-			비밀번호 : <form:input path="password"/>
+			비밀번호 : <form:input path="password" type="password"/>
 				   <form:errors path="password" cssClass="error"/>
 		</p>
 		<p>

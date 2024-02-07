@@ -13,10 +13,11 @@ import lombok.Data;
 @Data 
 public class MemberDto {
 	
-	@Email
+	@NotBlank(message="이메일을 입력 하세요")
+	@Email(message="이메일 양식에 맞춰서 입력하세요")
 	private String email;
 	
-	@NotNull(message="name is not input")
+	@NotEmpty(message="이름을 입력하세요")
 	private String name;
 	
 	@NotBlank
@@ -26,7 +27,7 @@ public class MemberDto {
 	@NotEmpty(message="city is required")
 	private String city;
 	
-	
+	@NotEmpty(message="주소를 입력 하세요")
 	private String state;
 	
 	@Digits(integer=5, fraction=0, message="우편번호 자릿수가 올바르지않습니다")
