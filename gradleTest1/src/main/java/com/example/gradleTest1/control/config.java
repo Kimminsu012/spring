@@ -13,8 +13,8 @@ public class config {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/beaver");
-		dataSource.setUsername("Beaver");
+		dataSource.setUrl("jdbc:mysql://krdrive.ipdisk.co.kr:3306/kms");
+		dataSource.setUsername("kms");
 		dataSource.setPassword("123456");
 		return dataSource;
 	}
